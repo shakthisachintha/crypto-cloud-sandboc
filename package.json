@@ -1,5 +1,5 @@
 {
-  "name": "crypto-cloud-sandboc",
+  "name": "crypto-cloud-sandbox",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,8 @@
   "dependencies": {
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "next": "16.0.0"
+    "next": "16.0.0",
+    "postgres": "^3.4.7"
   },
   "devDependencies": {
     "typescript": "^5",
