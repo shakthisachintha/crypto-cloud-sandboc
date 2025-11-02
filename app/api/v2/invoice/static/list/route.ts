@@ -24,6 +24,7 @@ export async function POST(req: Request) {
       active: !!r.active,
       address: r.address,
       uuid: r.uuid,
+      identify: r.identify,
     }));
     return NextResponse.json({ status: "success", result: { staticWallets, all_count } });
   } catch (e: unknown) {
