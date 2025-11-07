@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -14,25 +15,23 @@ export default function Home() {
           priority
         />
         <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
+          <h1>Crypto Cloud API Sandbox</h1>
           <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+            Mock API for testing Crypto Cloud payment integrations
+          </p>
+        </div>
+        <div className={styles.intro}>
+          <h2>Testing Tools</h2>
+          <p>
+            <Link href="/simulate-payment" style={{ 
+              color: '#0070f3', 
+              textDecoration: 'underline',
+              fontWeight: 600,
+              fontSize: '1.1rem'
+            }}>
+              Payment Simulator
+            </Link>{" "}
+            - Simulate payment webhooks for testing your integration
           </p>
         </div>
         <div className={styles.ctas}>
